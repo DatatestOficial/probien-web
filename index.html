@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel PROBIEN</title>
+    <!-- 1. IMPORTAR NOTO SANS DESDE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+
+    <style>
+        body { 
+            font-family: 'Noto Sans', sans-serif; 
+            font-size: 14px; /* Tamaño base reducido (estándar es 16px) */
+            background-color: #f0f2f5; 
+            margin: 0; 
+            padding: 0;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            color: #333;
+        }
+
+        /* CONTENEDOR DE LOGOS */
+        .header-logos {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-around; /* Reparte el espacio entre logos */
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    gap: 10px; /* Espacio mínimo entre ellos */
+}
+
+.logo {
+    /* Clave: Tamaño flexible basado en el ancho de la pantalla */
+    width: 30%;       /* Cada logo ocupa máximo el 40% del ancho disponible */
+    max-width: 180px; /* Pero no crece más de 180px en pantallas grandes */
+    height: auto;     /* Mantiene la proporción original */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+}
+        /* CONTENEDOR DE TARJETAS (Uno bajo el otro) */
+        .stack-container {
+            display: flex;
+            flex-direction: column; 
+            gap: 15px; 
+            width: 100%;
+            max-width: 450px;
+            padding-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .btn {
+            background-color: rgb(16,49,43);
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .btn:hover { background-color: rgb(105, 28, 50); }
+
+        h1 { margin: 15 px 0;
+            padding: 1px 10px;
+            text-align: center;
+         }
+
+        h3 { margin: 15 px 0;
+            padding: 5px 10px;
+            text-align: center;
+         }
+
+    </style>
+</head>
+<body>
+
+    <!-- Sección de Logos -->
+    <header class="header-logos">
+        <!-- Puedes usar rutas locales o URLs de internet -->
+        <img src="logo1.png" alt="Logo Izquierdo" class="logo">
+        <img src="logo2.png" alt="Logo centro" class="logo">
+        <img src="logo3.png" alt="Logo Derecho" class="logo">
+
+    </header>
+
+    <h1>Programa Producción para el Bienestar (PROBIEN) 2026 </h1>
+    <h3>Proceso de incorporación/actualización de productores de caña de azúcar abastecedores de ingenios</h3>
+    <div class="stack-container">
+        <div class="card">
+            <h3>Registro y buscador de personas de los listados de CONADESUCA</h3>
+            <a target="_blank" href="https://probien.duckdns.org/f/CiWmia3W0uuTKqWOa1FqQcMAg9fIUyW?st=f1KxqNYJoPgccodO1OTeE8VrgM!jb0NJqL0D9eZOt7S9drvyA0QGGUWkMY684$dN" class="btn">Iniciar Registro</a>
+        </div>
+        <div class="card">
+            <h3>Registro de Personas productoras de caña de azúcar abastecedoras de ingenios, que no están en los listados de CONADESUCA interesadas en formar parte de PROBIEN 2026</h3>
+            <a target="_blank" href="https://probien.duckdns.org/f/xMDX3TNFyKpw8QBQatvJu8s1w90Kf0p?st=v1aFhGHGB3YSX3ytdbjIEucK3QNbJUGo4bwya46rIoCSOzquG0yUJa0OuwSWJY1r" class="btn">Iniciar Registro</a>
+        </div>
+                <div class="card">
+            <h3>Registro de evidencias del proceso de incorporación/actualización</h3>
+            <a target="_blank" href="https://probien.duckdns.org/f/VCB10RQ1BZQiYQ8dPod5lR4JPmiVXZx?st=9BHhfzdbRzHzKPgn2Ss9mtbbssUqUTBzd6qxqF!Gam9ShBbgwS6mWrSFaic8KlP8" class="btn">Iniciar Registro</a>
+        </div>
+    </div>
+
+</body>
+</html>
